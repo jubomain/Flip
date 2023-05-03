@@ -15,11 +15,10 @@ export const GlobalStyle = createGlobalStyle`
   margin: 0;
   color: white;
   text-align: center;
-  background: linear-gradient(135deg, #1e1e2f 0%, #2a2a3a 100%);
-  background-size: 400% 400%;
-  animation: GradientAnimation 12s ease infinite;
+  background: linear-gradient(135deg, #4B6CB7 0%, #182848 100%);
   cursor: default;
 }
+
 
 @keyframes GradientAnimation {
   0% { background-position: 0% 50%; }
