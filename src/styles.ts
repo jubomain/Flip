@@ -126,12 +126,13 @@ export const ButtonCSS = css<{$gradient?: boolean}>`
   }
   ${({ $gradient }) => $gradient && `
     transition: background .5s;
-    background-image: linear-gradient(90deg,rgba(255,124,83,1) -0%,rgba(255,85,85,1) 48%,rgba(255,10,83,1) 100%);
+    background-image: linear-gradient(90deg,rgba(78,168,222,1) -0%,rgba(58,131,200,1) 48%,rgba(50,102,184,1) 100%);
     &:hover, &:focus {
-      background-image: linear-gradient(90deg,rgba(255,124,83,1) -25%,rgba(255,85,85,1) 48%,rgba(255,10,83,1) 125%);
+      background-image: linear-gradient(90deg,rgba(78,168,222,1) -25%,rgba(58,131,200,1) 48%,rgba(50,102,184,1) 125%);
     }
   `}
 `
+
 
 export const Button = styled.button`
   ${ButtonCSS}
