@@ -12,12 +12,20 @@ export const GlobalStyle = createGlobalStyle`
     height: 100%;
   }
   body {
-    margin: 0;
-    color: white;
-    text-align: center;
-    background: #090a0d;
-    cursor: default;
-  }
+  margin: 0;
+  color: white;
+  text-align: center;
+  background: linear-gradient(135deg, #1e1e2f 0%, #2a2a3a 100%);
+  background-size: 400% 400%;
+  animation: GradientAnimation 12s ease infinite;
+  cursor: default;
+}
+
+@keyframes GradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
   h1, h2, h3, h4 {
     margin: 0;
   }
